@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 
 def projects(request):
-    return HttpResponse("Here are new products")
+    return render(request, "projects.html")
 
 
 def project(request, pk):
-    return HttpResponse("SINGLE PROJECT")
+    return render(request, "single-project.html")
